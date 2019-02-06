@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+}
+
+#main{
+    display: grid;
+    grid-template-areas: 'header header header'
+                         'nav nav aside' 
+                         'section section aside' 
+                         'footer footer footer';
+    grid-auto-rows: 8vh 50vh 30vh 50vh;
+    grid-gap: 10px;
+}
+
+header{
+    grid-area: header;
+    background-color: rgb(209, 164, 164);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header a{
+    color: white;
+    font-size: 15pt;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    /* font-weight: italic; */
+}
+
+header a:nth-child(4){
+    color: gray;
+}
+
+header a:hover{
+    font-size: 13pt;
+}
+
+nav{
+    grid-area: nav;
+    background-color: rgb(160, 143, 175);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section img{
+    width: 160px;
+    height: 160px;
+}
+
+nav h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    font-size: 20pt;
+}
+
+section{
+    grid-area: section;
+    background-color: rgb(134, 165, 134);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+aside{
+    grid-area: aside;
+    background-color: rgb(199, 156, 182);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+aside p{
+    width: 150px;
+    color: white;
+    font-size: 10pt;
+}
+
+aside h2{
+    color: white;
+}
+
+footer{
+    grid-area: footer;
+    background-color: rgb(140, 140, 182);
+}
+
+footer img{
+    width: 40px;
+    height: auto;
+}
+
+footer div{
+    width:  190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
